@@ -1,3 +1,4 @@
+<!-- lili:顶部栏的头像 -->
 <script setup lang="ts">
 import { Setting } from "@element-plus/icons-vue";
 import { UserEnum } from "@/enum/userEnum";
@@ -26,6 +27,7 @@ function toLogin() {
 </script>
 
 <template>
+  <!-- lili:顶部栏的头像和文字显示 -->
   <el-avatar shape="square" :size="40" :src="userState.avatar" />
   <div class="flex flex-col items-start">
     <span class="font-sans dark:text-white text-gray-600 text-sm font-medium">{{
@@ -33,11 +35,13 @@ function toLogin() {
     }}</span>
     <span class="font-sans dark:text-white text-gray-500 text-sm">{{ formatted }}</span>
   </div>
+  <!-- lili:顶部栏的头像后的下拉图标 -->
   <el-dropdown>
     <el-icon :size="20" class="ml-2 mt-[1px] hover:rotate-90 duration-500 cursor-pointer"
       ><setting
     /></el-icon>
     <template #dropdown>
+      <!-- lili:顶部栏的头像后的下拉框 -->
       <el-dropdown-menu>
         <el-dropdown-item @click="openNewTab(UserEnum.GITHUB_REPOSITORY)">{{
           t("github")

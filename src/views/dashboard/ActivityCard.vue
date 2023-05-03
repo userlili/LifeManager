@@ -1,9 +1,10 @@
+<!-- lili:排行榜 -->
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { setupDashobardAttributes } from "./modules/activity";
 
 const { t } = useI18n();
-
+// lili:所有信息来源在这里
 const { activityColumns, activityTableData } = setupDashobardAttributes();
 </script>
 
@@ -11,6 +12,7 @@ const { activityColumns, activityTableData } = setupDashobardAttributes();
   <div>
     <Card>
       <template #title> {{ t("page.common.dashboard.card.leaderboard") }} </template>
+
       <template #content>
         <c-table
           :table-data="activityTableData"

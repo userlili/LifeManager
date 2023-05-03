@@ -9,8 +9,7 @@ const { t } = useI18n();
     <template #content>
       <div class="px-5">
         <p class="text-gray-400">
-          cloud-app-admin 使用了最新的Vue3.2+ Vite3、Element-Plus、TypeScript、Tailwind
-          CSS等主流技术开发，希望能和大家一起学习最新前端技术。
+          本项目使用了最新的Vue3.2+ Vite3、Element-Plus、TypeScript、Tailwind CSS等主流技术开发，希望能和大家一起学习最新前端技术。
         </p>
       </div>
     </template>

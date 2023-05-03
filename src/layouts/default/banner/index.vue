@@ -1,3 +1,4 @@
+<!-- lili:左侧菜单栏logo -->
 <script setup lang="ts">
 import menuService from "@/hooks/useMenu";
 import { useI18n } from "vue-i18n";

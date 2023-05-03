@@ -1,3 +1,4 @@
+<!-- lili:圆饼图 -->
 <script setup lang="ts">
 import { EchartEnum } from "@/enum/echartEnum";
 import { useElementSize, watchDebounced } from "@vueuse/core";
@@ -7,7 +8,7 @@ import { normalOptions, pieOptions, tinyOptions } from "./modules/pie";
 const { t } = useI18n();
 const pie = ref(null);
 const { width } = useElementSize(pie);
-
+// lili:数据来源在这里啊
 const options = ref(pieOptions);
 
 watchDebounced(

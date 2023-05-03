@@ -1,3 +1,4 @@
+<!-- lili:顶部栏的全屏-->
 <script setup lang="ts">
 import { useFullScreen } from "@/hooks/useFullScreen";
 

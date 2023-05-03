@@ -1,3 +1,4 @@
+<!-- lili:六维数据 -->
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { useElementSize } from "@vueuse/core";
@@ -9,7 +10,7 @@ import { useTheme } from "@/hooks/useTheme";
 const { t } = useI18n();
 const radar = ref(null);
 const { width } = useElementSize(radar);
-
+// lili:数据来源在这里
 const options = ref(radarOptions);
 const { state } = useTheme();
 

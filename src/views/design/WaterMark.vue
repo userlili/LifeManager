@@ -1,3 +1,4 @@
+<!-- lili:水印 -->
 <script setup lang="ts">
 import { useWatermark } from "@/hooks/useWaterMark";
 import { useI18n } from "vue-i18n";

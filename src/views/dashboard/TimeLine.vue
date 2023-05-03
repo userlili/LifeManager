@@ -1,3 +1,4 @@
+<!-- lili:时间线 -->
 <script setup lang="ts">
 import { UserEnum } from "@/enum/userEnum";
 import { contentType, fetchCommits, fetchMockCommits, GithubCommitResultType } from "@/api/github";
@@ -109,6 +110,7 @@ onMounted(async () => {
 
 <template>
   <Card :err-capture="!!errorMessage">
+    <!-- lili:标题和旋转按钮 -->
     <template #title> {{ t("page.common.dashboard.card.timeline") }} </template>
     <template #actions>
       <i-mdi-refresh
@@ -117,6 +119,7 @@ onMounted(async () => {
         @click="() => onLoad()"
       />
     </template>
+    <!-- lili:错误界面 -->
     <template #error>
       <div class="flex justify-center items-center h-[220px] w-8/12 text-center mx-auto">
         <p class="text-lg font-semibold text-gray-500">
@@ -124,9 +127,11 @@ onMounted(async () => {
         </p>
       </div>
     </template>
+    <!-- lili:显示内容 -->
     <template #content>
       <div v-loading="loading" class="time-line-box h-[250px] overflow-y-auto px-6 py-5">
         <el-timeline>
+          <!-- lili:时间轴 -->
           <el-timeline-item
             v-for="(activity, index) in Object.values(activitieList)"
             :key="index"
@@ -137,6 +142,7 @@ onMounted(async () => {
             :timestamp="activity.timestamp"
             placement="top"
           >
+            <!-- lili:每个时间轴的卡片信息 -->
             <Card empty auto-height>
               <template #content>
                 <div class="p-3 overflow-auto">

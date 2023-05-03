@@ -1,3 +1,4 @@
+<!-- lili:错误界面 -->
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 

@@ -4,7 +4,7 @@ export default {
   name: "alive",
   path: "/alive",
   component: () => import("@/layouts/common-page.vue"),
-  meta: { auth: true, menu: { title: "router.alive", icon: "More" } },
+  meta: { auth: true, menu: { title: "router.alive", icon: "More" , sort: 10} },
   children: [
     {
       name: "clock",

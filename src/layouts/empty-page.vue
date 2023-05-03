@@ -6,5 +6,4 @@ import PageView from "./pages/index.vue";
     <PageView />
   </el-container>
 </template>
-
 <style scoped></style>

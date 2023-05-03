@@ -1,3 +1,4 @@
+<!-- lili:顶部栏的 翻译 -->
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import i18nService from "@/hooks/useI18n";

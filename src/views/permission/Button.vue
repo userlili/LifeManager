@@ -1,3 +1,4 @@
+<!-- lili:按钮权限 -->
 <script setup lang="ts">
 import permissionService from "@/hooks/usePermission";
 import { useI18n } from "vue-i18n";

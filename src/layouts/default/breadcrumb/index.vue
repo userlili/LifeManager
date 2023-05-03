@@ -1,3 +1,4 @@
+<!-- lili:主界面，左上角的面包屑功能-->
 <script setup lang="ts">
 import { ArrowRight } from "@element-plus/icons-vue";
 import menuService from "@/hooks/useMenu";

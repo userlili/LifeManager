@@ -4,7 +4,7 @@ export default {
   name: "error",
   path: "/error",
   component: () => import("@/layouts/common-page.vue"),
-  meta: { auth: true, menu: { title: "router.error", icon: "CircleCloseFilled" } },
+  meta: { auth: true, menu: { title: "router.error", icon: "CircleCloseFilled", sort: 12 } },
   children: [
     {
       name: "404",

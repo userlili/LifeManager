@@ -1,3 +1,4 @@
+<!-- lili:四大面板 -->
 <script setup lang="ts">
 import PiKa from "@/assets/img/pika.webp";
 import Kabi from "@/assets/img/kabi.webp";

@@ -1,3 +1,4 @@
+<!-- lili:左侧菜单栏 -->
 <script lang="ts" setup>
 import Banner from "../banner/index.vue";
 import menuService from "@/hooks/useMenu";
@@ -18,12 +19,15 @@ const isCollapse = computed(() => {
 
 <template>
   <el-aside class="admin-menu border-base bg-dark" :class="{ close: menuService.close.value }">
+    <!-- lili:左上角的logo -->
     <div class="flex justify-center">
       <Banner />
     </div>
+    <!-- lili:菜单menu -->
     <el-menu :collapse="isCollapse" :default-active="acticeIndex">
       <menu-item :sub-menu="menuService.menus.value" />
     </el-menu>
+    <!-- lili:移动端打开，后面的暗幕，如果点击暗幕，则收起菜单 -->
     <teleport to="body">
       <div
         v-show="!menuService.close.value"

@@ -1,3 +1,4 @@
+<!-- lili:左侧菜单栏 -->
 <script setup lang="ts">
 import menuService from "@/hooks/useMenu";
 import { useI18n } from "vue-i18n";
@@ -32,6 +33,7 @@ function handleMenuClick(cmenu: Menu) {
 
 <template>
   <template v-for="(menu, index) of props.subMenu" :key="index">
+    <!-- lili:第一种显示方式:左侧为缩小状态的菜单 -->
     <template v-if="menu.hideParent">
       <el-menu-item
         v-for="(cmenu, key) of menu.children"
@@ -44,12 +46,13 @@ function handleMenuClick(cmenu: Menu) {
         <span>{{ t(menu.title!) }}</span></el-menu-item
       >
     </template>
-
+    <!-- lili:第二种显示方式:左侧菜单全部显示 -->
     <el-sub-menu v-else :index="menu.title!">
       <template #title>
         <el-icon><component :is="menu.icon" /></el-icon>
         <span>{{ t(menu.title!) }}</span>
       </template>
+      <!-- lili:菜单嵌套循环 -->
       <template v-for="(cmenu, key) of menu.children">
         <menu-item
           v-if="cmenu.children"

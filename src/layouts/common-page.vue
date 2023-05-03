@@ -16,6 +16,7 @@ watch(
 </script>
 <template>
   <el-container class="h-screen w-full font-sans">
+    <!-- lili:左侧菜单 -->
     <Menu />
     <el-container direction="vertical">
       <Header />

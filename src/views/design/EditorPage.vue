@@ -1,3 +1,4 @@
+<!-- lili:父文本编辑 -->
 <script setup lang="ts">
 const content = ref("<p>Hello</p>");
 </script>

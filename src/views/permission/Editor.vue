@@ -1,3 +1,4 @@
+<!-- lili:编辑权限 -->
 <script setup lang="ts">
 import permissionService from "@/hooks/usePermission";
 </script>

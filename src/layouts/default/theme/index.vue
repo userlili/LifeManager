@@ -1,3 +1,4 @@
+<!-- lili:顶部栏的主题 -->
 <script setup lang="ts">
 import { useTheme } from "@/hooks/useTheme";
 

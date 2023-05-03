@@ -92,12 +92,12 @@ async function fetchRemoteRoute() {
  * @param router 路由实例
  */
 async function autoload(router: Router) {
-  const remoteFlag = !!getToken();
-
-  if (remoteFlag) {
-    const remoteRoutes = await fetchRemoteRoute();
-    routes = [...routes, ...remoteRoutes];
-  }
+  // lili:俺觉得用不上
+  // const remoteFlag = !!getToken();
+  // if (remoteFlag) {
+  //   const remoteRoutes = await fetchRemoteRoute();
+  //   routes = [...routes, ...remoteRoutes];
+  // }
 
   routes = routes.map((route) => {
     route.children = filterNestedChildren(route.children!);

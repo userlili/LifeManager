@@ -1,3 +1,4 @@
+<!-- lili:顶部历史记录 -->
 <script setup lang="ts">
 import tabService from "@/hooks/useTab";
 import { useI18n } from "vue-i18n";

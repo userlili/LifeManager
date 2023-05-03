@@ -4,7 +4,7 @@ export default {
   name: "design",
   path: "/design",
   component: () => import("@/layouts/common-page.vue"),
-  meta: { auth: true, menu: { title: "router.design", icon: "EditPen" } },
+  meta: { auth: true, menu: { title: "router.design", icon: "EditPen", sort: 11 } },
   children: [
     {
       name: "article",
